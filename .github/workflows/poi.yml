@@ -3,7 +3,7 @@ name: POI CICD
 env:
   poi_path: apis/poi/**
   registry: docker.pkg.github.com
-  repository: jagath-Mph/openhack-devops-team/api-poi
+  repository: jagath-mph/openhack-devops-team/api-poi
   docker_path: apis/poi/web
   staging_url: https://openhackl8s1aa46poi-staging.azurewebsites.net
   prod_url: https://openhackl8s1aa46poi.azurewebsites.net

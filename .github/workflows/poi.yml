@@ -136,8 +136,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: "Set Expected Validation Tag"
-      run: sed -i 's/<--tag-->/${{github.run_number}}/g' apis/poi/webvalidate/validate.json
+    #- name: "Set Expected Validation Tag"
+    #  run: sed -i 's/<--tag-->/${{github.run_number}}/g' apis/poi/webvalidate/validate.json
 
     - name: Build Validation Container
       run: docker build -t poivalidate apis/poi/webvalidate
